@@ -38,7 +38,7 @@
 <f:section name="twoColumns">
     <div class="row">
         <f:for each="{inlineElements}" as="inlineElement" iteration="i">
-            <div class="col-12 col-md-6 content-column-item-2cols">
+            <div class="col-12 col-md-6 content-column-item-2cols{f:if(condition: '{inlineElement.data.image_posiiton} == 0', then: ' image-position__top', else: ' image-position__bottom')}">
                 <div class="content-column-item{f:if(condition: '{i.total} > 1', then: ' margin-desktop')}{f:if(condition: '{i.isLast}', then: ' content-column-item__last')}">
                     <f:render section="inlineElement" arguments="{_all}"/>
                 </div>
@@ -49,7 +49,7 @@
 <f:section name="threeColumns">
     <div class="row">
         <f:for each="{inlineElements}" as="inlineElement" iteration="i">
-            <div class="col-12 col-md-4 content-column-item-3cols">
+            <div class="col-12 col-md-4 content-column-item-3cols{f:if(condition: '{inlineElement.data.image_posiiton} == 0', then: ' image-position__top', else: ' image-position__bottom')}">
                 <div class="content-column-item{f:if(condition: '{i.total} > 2', then: ' margin-desktop')}{f:if(condition: '{i.isLast}', then: ' content-column-item__last')}">
                     <f:render section="inlineElement" arguments="{_all}"/>
                 </div>
@@ -60,7 +60,7 @@
 <f:section name="fourColumns">
     <div class="row">
         <f:for each="{inlineElements}" as="inlineElement" iteration="i">
-            <div class="col-12 col-md-3 content-column-item-4cols">
+            <div class="col-12 col-md-3 content-column-item-4cols{f:if(condition: '{inlineElement.data.image_posiiton} == 0', then: ' image-position__top', else: ' image-position__bottom')}">
                 <div class="content-column-item{f:if(condition: '{i.total} > 2', then: ' margin-desktop')}{f:if(condition: '{i.isLast}', then: ' content-column-item__last')}">
                     <f:render section="inlineElement" arguments="{_all}"/>
                 </div>
@@ -79,13 +79,13 @@
                                 <f:link.typolink parameter="{inlineElement.data.cta}">
                                     <f:switch expression="{data.inline_layout}">
                                         <f:case value="1">
-                                            <f:render section="image-rendering-2cols" arguments="{_all}"/>
+                                            <f:render section="image-rendering-2cols" arguments="{image: image, imageClass: ' image-top'}"/>
                                         </f:case>
                                         <f:case value="2">
-                                            <f:render section="image-rendering-3cols" arguments="{_all}"/>
+                                            <f:render section="image-rendering-3cols" arguments="{image: image, imageClass: ' image-top'}"/>
                                         </f:case>
                                         <f:case value="3">
-                                            <f:render section="image-rendering-4cols" arguments="{_all}"/>
+                                            <f:render section="image-rendering-4cols" arguments="{image: image, imageClass: ' image-top'}"/>
                                         </f:case>
                                     </f:switch>
                                 </f:link.typolink>
@@ -93,13 +93,13 @@
                             <f:else>
                                 <f:switch expression="{data.inline_layout}">
                                     <f:case value="1">
-                                        <f:render section="image-rendering-2cols" arguments="{_all}"/>
+                                        <f:render section="image-rendering-2cols" arguments="{image: image, imageClass: ' image-top'}"/>
                                     </f:case>
                                     <f:case value="2">
-                                        <f:render section="image-rendering-3cols" arguments="{_all}"/>
+                                        <f:render section="image-rendering-3cols" arguments="{image: image, imageClass: ' image-top'}"/>
                                     </f:case>
                                     <f:case value="3">
-                                        <f:render section="image-rendering-4cols" arguments="{_all}"/>
+                                        <f:render section="image-rendering-4cols" arguments="{image: image, imageClass: ' image-top'}"/>
                                     </f:case>
                                 </f:switch>
                             </f:else>
@@ -141,17 +141,38 @@
             </f:if>
             <f:if condition="{inlineElement.images}">
                 <f:then>
-                    <f:switch expression="{data.inline_layout}">
-                        <f:case value="1">
-                            <f:render section="image-rendering-2cols" arguments="{_all}"/>
-                        </f:case>
-                        <f:case value="2">
-                            <f:render section="image-rendering-3cols" arguments="{_all}"/>
-                        </f:case>
-                        <f:case value="3">
-                            <f:render section="image-rendering-4cols" arguments="{_all}"/>
-                        </f:case>
-                    </f:switch>
+                    <f:for each="{inlineElement.images}" as="image">
+                        <f:if condition="{inlineElement.data.cta}">
+                            <f:then>
+                                <f:link.typolink parameter="{inlineElement.data.cta}">
+                                    <f:switch expression="{data.inline_layout}">
+                                        <f:case value="1">
+                                            <f:render section="image-rendering-2cols" arguments="{image: image, imageClass: ' image-bottom'}"/>
+                                        </f:case>
+                                        <f:case value="2">
+                                            <f:render section="image-rendering-3cols" arguments="{image: image, imageClass: ' image-bottom'}"/>
+                                        </f:case>
+                                        <f:case value="3">
+                                            <f:render section="image-rendering-4cols" arguments="{image: image, imageClass: ' image-bottom'}"/>
+                                        </f:case>
+                                    </f:switch>
+                                </f:link.typolink>
+                            </f:then>
+                            <f:else>
+                                <f:switch expression="{data.inline_layout}">
+                                    <f:case value="1">
+                                        <f:render section="image-rendering-2cols" arguments="{image: image, imageClass: ' image-bottom'}"/>
+                                    </f:case>
+                                    <f:case value="2">
+                                        <f:render section="image-rendering-3cols" arguments="{image: image, imageClass: ' image-bottom'}"/>
+                                    </f:case>
+                                    <f:case value="3">
+                                        <f:render section="image-rendering-4cols" arguments="{image: image, imageClass: ' image-bottom'}"/>
+                                    </f:case>
+                                </f:switch>
+                            </f:else>
+                        </f:if>
+                    </f:for>
                 </f:then>
             </f:if>
         </f:else>
@@ -175,7 +196,7 @@
                 media="(min-width: 1201px)"
                 srcset="{f:uri.image(image: image, maxWidth: 640)}"
         />
-        <f:image image="{image}" class="img-fluid" loading="lazy" alt="{image.alternative}" title="{image.title}" />
+        <f:image image="{image}" class="img-fluid{imageClass}" loading="lazy" alt="{image.alternative}" title="{image.title}" />
     </picture>
 </f:section>
 <f:section name="image-rendering-3cols">
@@ -192,7 +213,7 @@
                 media="(min-width: 1200px)"
                 srcset="{f:uri.image(image: image, maxWidth: 420)}"
         />
-        <f:image image="{image}" class="img-fluid" loading="lazy" alt="{image.alternative}" title="{image.title}" />
+        <f:image image="{image}" class="img-fluid{imageClass}" loading="lazy" alt="{image.alternative}" title="{image.title}" />
     </picture>
 </f:section>
 <f:section name="image-rendering-4cols">
@@ -209,7 +230,7 @@
                 media="(min-width: 1200px)"
                 srcset="{f:uri.image(image: image, maxWidth: 350)}"
         />
-        <f:image image="{image}" class="img-fluid" loading="lazy" alt="{image.alternative}" title="{image.title}" />
+        <f:image image="{image}" class="img-fluid{imageClass}" loading="lazy" alt="{image.alternative}" title="{image.title}" />
     </picture>
 </f:section>
 </html>
