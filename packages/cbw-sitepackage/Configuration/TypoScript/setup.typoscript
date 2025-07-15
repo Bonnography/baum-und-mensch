@@ -1,0 +1,6 @@
+@import 'EXT:cbw_sitepackage/Configuration/TypoScript/Setup/config.typoscript'
+@import 'EXT:cbw_sitepackage/Configuration/TypoScript/Setup/Lib/'
+@import 'EXT:cbw_sitepackage/Configuration/TypoScript/Setup/Helper/'
+@import 'EXT:cbw_sitepackage/Configuration/TypoScript/Setup/ContentElement/tt_content.typoscript'
+@import 'EXT:cbw_sitepackage/Configuration/TypoScript/Setup/Plugins/'
+@import 'EXT:cbw_sitepackage/Configuration/TypoScript/Setup/Page/'

@@ -1,0 +1,4 @@
+@import 'EXT:cbw_sitepackage/Configuration/TSconfig/Page/BaseConfig/Mod/WebLayout/'
+@import 'EXT:cbw_sitepackage/Configuration/TSconfig/Page/BaseConfig/Mod/ContentElements/'
+@import 'EXT:cbw_sitepackage/Configuration/TSconfig/Page/BaseConfig/rte/'
+@import 'EXT:cbw_sitepackage/Configuration/TSconfig/Page/BaseConfig/TCEFORM/'

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="de" datatype="plaintext" original="messages" date="2023-08-03UTC08:39:270">
+        <header>
+            <authorName>Benjamin Bomberg</authorName>
+            <authorEmail>benjamin.bomberg@codebomb-websolutions.de</authorEmail>
+        </header>
+        <body>
+           <trans-unit id="element.firstname.properties.label">
+               <target>Vorname</target>
+           </trans-unit>
+           <trans-unit id="element.firstname.properties.placeholder">
+              <target>Vorname</target>
+           </trans-unit>
+           <trans-unit id="element.lastname.properties.label">
+               <target>Nachname</target>
+           </trans-unit>
+           <trans-unit id="element.lastname.properties.placeholder">
+               <target>Nachname</target>
+           </trans-unit>
+           <trans-unit id="element.lastname-contact-form.properties.placeholder">
+               <target>Nachname*</target>
+           </trans-unit>
+           <trans-unit id="element.lastname-contact-form.properties.label">
+               <target>Nachname</target>
+           </trans-unit>
+           <trans-unit id="element.email-contact-form.properties.label">
+               <target>E-Mail-Adresse</target>
+           </trans-unit>
+           <trans-unit id="element.message-contact-form.properties.placeholder">
+               <target>Nachricht*</target>
+           </trans-unit>
+           <trans-unit id="element.message-contact-form.properties.label">
+               <target>Nachricht</target>
+           </trans-unit>
+           <trans-unit id="element.birthdate.properties.label">
+               <target>Geburtstag</target>
+           </trans-unit>
+           <trans-unit id="element.email.properties.label">
+               <target>E-Mail</target>
+           </trans-unit>
+           <trans-unit id="element.email.properties.placeholder">
+               <target>E-Mail-Adresse</target>
+           </trans-unit>
+           <trans-unit id="element.email-contact-form.properties.placeholder">
+               <target>E-Mail-Adresse*</target>
+           </trans-unit>
+           <trans-unit id="element.phone.properties.label">
+               <target>Telefon</target>
+           </trans-unit>
+           <trans-unit id="element.phone.properties.placeholder">
+               <target>Telefonnummer</target>
+           </trans-unit>
+           <trans-unit id="element.Form.renderingOptions.submitButtonLabel">
+               <target>Absenden</target>
+           </trans-unit>
+           <trans-unit id="element.consent-declaration.properties.value">
+               <target>Ich habe die <![CDATA[<a target="_blank" rel="noopener" href="#">Datenschutzerklärung</a> gelesen und stimme ihrem Inhalt zu.]]></target>
+           </trans-unit>
+           <trans-unit id="element.consent-declaration.properties.label">
+               <target>Ich habe die <![CDATA[<a target="_blank" rel="noopener" href="#">Datenschutzerklärung</a> gelesen und stimme ihrem Inhalt zu.]]></target>
+           </trans-unit>
+           <trans-unit id="form.confirmation.yourMessage">
+              <target>Deine Nachricht</target>
+          </trans-unit>
+           <trans-unit id="form.confirmation.contactForm.header">
+              <target>Vielen Dank für deine Nachricht</target>
+          </trans-unit>
+           <trans-unit id="form.confirmation.contactForm.data">
+              <target>Folgende Daten wurden erfolgreich übermittelt:</target>
+          </trans-unit>
+           <trans-unit id="form.validation.Text">
+              <target>Bitte ausfüllen</target>
+          </trans-unit>
+           <trans-unit id="form.validation.Textarea">
+              <target>Bitte ausfüllen</target>
+          </trans-unit>
+           <trans-unit id="form.validation.Email">
+              <target>Bitte ausfüllen</target>
+          </trans-unit>
+           <trans-unit id="form.validation.Phone">
+              <target>Bitte ausfüllen</target>
+          </trans-unit>
+           <trans-unit id="form.validation.Date">
+              <target>Bitte korrektes Datum wählen</target>
+          </trans-unit>
+           <trans-unit id="form.validation.SingleSelect">
+              <target>Bitte auswählen</target>
+          </trans-unit>
+           <trans-unit id="form.validation.RadioButton">
+              <target>Bitte auswählen</target>
+          </trans-unit>
+           <trans-unit id="form.validation.MultiCheckbox">
+              <target>Bitte auswählen</target>
+          </trans-unit>
+           <trans-unit id="form.validation.Checkbox">
+              <target>Bitte ankreuzen</target>
+          </trans-unit>
+           <trans-unit id="form.validation.Recaptcha">
+              <target>Bitte ankreuzen</target>
+          </trans-unit>
+        </body>
+    </file>
+</xliff>

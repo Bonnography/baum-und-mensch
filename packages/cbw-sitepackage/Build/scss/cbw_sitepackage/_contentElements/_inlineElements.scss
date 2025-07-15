@@ -1,0 +1,36 @@
+.content.inlineElements {
+  .content-column-item {
+    margin-bottom: 40px;
+
+    &__last {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .content.inlineElements {
+    .content-column-item {
+      margin-bottom: 0;
+
+      &.margin-desktop {
+        margin-bottom: 40px;
+      }
+    }
+    .content-column-item-2cols {
+      &:nth-last-child(-n+2) {
+        .content-column-item.margin-desktop {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .content-column-item-3cols {
+      &:nth-last-child(-n+3) {
+        .content-column-item.margin-desktop {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

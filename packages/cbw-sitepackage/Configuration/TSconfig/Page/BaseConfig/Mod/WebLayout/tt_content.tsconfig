@@ -1,0 +1,11 @@
+mod {
+    web_layout {
+
+        tt_content {
+
+            preview {
+                inlineElements = EXT:cbw_sitepackage/Resources/Private/Templates/Preview/InlineElements.html
+            }
+        }
+    }
+}

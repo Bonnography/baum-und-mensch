@@ -1,0 +1,21 @@
+
+#
+# example for page logo
+#
+# ####
+
+lib.page-head-logo = IMAGE
+lib.page-head-logo {
+    file = {$plugin.tx_cbw_sitepackage.company.logo}
+    params = class="img-fluid"
+    altText.data = leveltitle:0
+    titleText = Page Logo
+    stdWrap {
+        wrap = <div id="page-logo">|</div>
+        typolink {
+            parameter.data = leveluid:0
+            ATagParams = title="{leveltitle:0}" class="page-logo"
+            ATagParams.insertData = 1
+        }
+    }
+}

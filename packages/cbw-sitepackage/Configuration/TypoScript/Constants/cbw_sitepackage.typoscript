@@ -1,0 +1,35 @@
+plugin.tx_cbw_sitepackage {
+    company {
+        # cat=basic/SocialMedia/10; type=string; label=Facebook
+        facebook =
+        # cat=basic/SocialMedia/20; type=string; label=Instagram
+        instagram =
+        # cat=basic/Logo/20; type=string; label=Logo
+        logo = EXT:cbw_sitepackage/Resources/Public/images/baum_und_mensch_logo.jpg
+        # cat=basic/SocialMedia/40; type=string; label=Favicon
+        favicon = typo3conf/ext/cbw_sitepackage/Resources/Public/images/favicon.ico
+        # cat=basic/SocialMedia/50; type=string; label=Favicon
+        mstile = typo3conf/ext/cbw_sitepackage/Resources/Public/images/mstile-150x150.png
+        # cat=basic/SocialMedia/60; type=string; label=Favicon
+        safari-pin = typo3conf/ext/cbw_sitepackage/Resources/Public/images/safari-pinned-tab.svg
+        # cat=basic/SocialMedia/70; type=string; label=Favicon
+        apple-touch = typo3conf/ext/cbw_sitepackage/Resources/Public/images/apple-touch-icon.png
+        # cat=basic/SocialMedia/80; type=string; label=Favicon
+        android-chrome = typo3conf/ext/cbw_sitepackage/Resources/Public/images/android-chrome-96x96.png
+        # cat=basic/SocialMedia/90; type=string; label=Favicon
+        favicon-16x16 = typo3conf/ext/cbw_sitepackage/Resources/Public/images/favicon-16x16.png
+    }
+
+    doktypes {
+        news = 116
+    }
+
+    page {
+        # cat=basic/Page/10; type=int+; label=Ordner Footermenu
+        menuFooter = 4
+        # cat=basic/Page/20; type=int+; label=News Listview
+        newsListViewPid =
+        # cat=basic/Page/30; type=int+; label=Meta Menu
+        metaMenu =
+    }
+}

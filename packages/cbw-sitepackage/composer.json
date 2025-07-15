@@ -1,0 +1,21 @@
+{
+    "name": "codebomb-websolutions/cbw-sitepackage",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "homepage": "https://www.bonnography.de",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "typo3/cms-core": "^13.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "CodebombWebsolutions\\CbwSitepackage\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "cbw_sitepackage"
+        }
+    }
+}

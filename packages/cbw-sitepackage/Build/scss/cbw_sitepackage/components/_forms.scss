@@ -1,0 +1,162 @@
+.form__label-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+.contactform {
+  label.form-label {
+    display: none;
+  }
+}
+.contactform {
+  padding: 40px 30px;
+  box-shadow: 0 0 2px 2px rgba(24,81,26,.25);
+  margin-bottom: 30px;
+  //border-radius: 10px;
+
+  .form-check {
+    padding-left: 0;
+  }
+  .form-label {
+    margin-bottom: .75rem;
+    font-size: 1.25rem;
+  }
+
+
+  input {
+    border-color: $main-bright-color;
+  }
+
+  .input {
+    .form-control {
+      border-radius: 0;
+      width: 100%;
+      color: $input-color;
+      appearance: auto;
+
+      &:focus {
+        border-color: $main-color;
+        box-shadow: unset;
+        outline: 0;
+      }
+    }
+    .form-check {
+      .declaration {
+        .form-check-input {
+          margin-top: 0;
+          margin-left: 0;
+          float: unset;
+          background: #fff;
+          width: 0.825em;
+          height: 0.825em;
+          border: var(--bs-border-width) solid rgba(0, 0, 0, .5);
+          border-radius: .15em;
+        }
+      }
+    }
+
+    textarea.form-control {
+      border-color: $main-bright-color;
+    }
+
+    &.checkbox {
+      label {
+        padding-left: 0;
+      }
+
+    }
+
+    .checkbox-label {
+      display: block;
+      margin-left: 25px;
+    }
+  }
+
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+
+    .btn-group {
+      display: block;
+    }
+  }
+  .form-check-label {
+    display: flex;
+    align-items: center;
+
+    p, span {
+      margin-bottom: 0;
+      margin-left: 10px;
+    }
+  }
+  .declaration {
+    span {
+      margin: 0;
+    }
+  }
+}
+.was-validated {
+  .input {
+    .form-check {
+      .declaration {
+        .form-check-input:invalid {
+          border-color: var(--bs-form-invalid-border-color);
+        }
+        .form-check-input:invalid + p {
+          color: var(--bs-form-invalid-border-color);
+        }
+      }
+    }
+    &.checkbox {
+      &.invalid {
+        p {
+          color: red;
+          a {
+            color: red;
+          }
+        }
+        .invalid-feedback {
+          display: block;
+        }
+      }
+    }
+  }
+  .recaptcha {
+    &.invalid {
+      iframe {
+        border: 2px solid red;
+      }
+      .invalid-feedback {
+        display: block;
+      }
+    }
+  }
+
+}
+@include media-breakpoint-up(md) {
+  .contactform {
+    .input {
+      &.checkbox {
+        width: 75%;
+      }
+    }
+  }
+
+}
+
+@include media-breakpoint-up(lg) {
+  .contactform {
+    .input {
+      textarea.form-control {
+        min-height: 150px;
+      }
+    }
+  }
+}

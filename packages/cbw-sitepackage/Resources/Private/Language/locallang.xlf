@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2023-08-03UTC08:39:270">
+        <header>
+            <authorName>Benjamin Bomberg</authorName>
+            <authorEmail>benjamin.bomberg@codebomb-websolutions.de</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="news.showAll">
+                <source>Show all news</source>
+            </trans-unit>
+            <trans-unit id="news.moreInformation">
+                <source>Read more</source>
+            </trans-unit>
+            <trans-unit id="news.backlink">
+                <source>Back to the news overview</source>
+            </trans-unit>
+            <trans-unit id="concerts.date">
+                <source>Date: </source>
+            </trans-unit>
+            <trans-unit id="concerts.location">
+                <source>Location: </source>
+            </trans-unit>
+            <trans-unit id="concerts.price">
+                <source>Price: </source>
+            </trans-unit>
+            <trans-unit id="concerts.moreInformation">
+                <source>More informations</source>
+            </trans-unit>
+            <trans-unit id="concerts.lessInformation">
+                <source>Less informations</source>
+            </trans-unit>
+            <trans-unit id="concerts.tickets">
+                <source>Tickets</source>
+            </trans-unit>
+            <trans-unit id="concerts.filterYear">
+                <source>Choose a year</source>
+            </trans-unit>
+            <trans-unit id="concerts.filterCategory">
+                <source>Choose a category</source>
+            </trans-unit>
+            <trans-unit id="concerts.time">
+                <source>Time of day: </source>
+            </trans-unit>
+            <trans-unit id="concerts.noConcerts">
+                <source>Sorry but there are no concerts available</source>
+            </trans-unit>
+            <trans-unit id="footer.newsletterText">
+                <source>Information for newsletter</source>
+            </trans-unit>
+            <trans-unit id="footer.socialMediaText">
+                <source>Social Media</source>
+            </trans-unit>
+
+            <trans-unit id="footer.newsletterButton">
+                <source>Subscribe to newsletter</source>
+            </trans-unit>
+
+            <trans-unit id="footer.newsLetter.email">
+                <source>E-mail address</source>
+            </trans-unit>
+
+            <trans-unit id="languages.en">
+                <source>English</source>
+            </trans-unit>
+            <trans-unit id="languages.de">
+                <source>Deutsch</source>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

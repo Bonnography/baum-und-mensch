@@ -1,0 +1,45 @@
+#
+# part for the content rendering
+#
+# ####
+
+lib.section-content = COA
+lib.section-content {
+    10 = FLUIDTEMPLATE
+    10 {
+        templateRootPaths {
+            0 = EXT:cbw_sitepackage/Resources/Private/Templates/Page/Backendlayouts
+        }
+
+        layoutRootPaths {
+            0 = EXT:cbw_sitepackage/Resources/Private/Layouts/Page/Backendlayouts
+        }
+
+        partialRootPaths {
+            0 = EXT:cbw_sitepackage/Resources/Private/Partials/Page/Backendlayouts
+        }
+
+        variables {
+            headerimage < styles.content.get
+            headerimage {
+                select.where = colPos=0
+            }
+            content < styles.content.get
+            content {
+                select.where = colPos=5
+            }
+            newsListPid = TEXT
+            newsListPid.value = {$plugin.tx_cbw_sitepackage.page.newsListViewPid}
+        }
+        templateName.stdWrap.cObject = CASE
+        templateName.stdWrap.cObject {
+            key.data = pageLayout
+
+            default = TEXT
+            default.value = Default
+
+            pagets__news = TEXT
+            pagets__news.value = News
+        }
+    }
+}

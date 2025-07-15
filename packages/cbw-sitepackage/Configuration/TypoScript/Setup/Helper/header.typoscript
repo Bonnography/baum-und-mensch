@@ -1,0 +1,87 @@
+#
+# part for some additional header data configs
+#
+# ####
+lib.og-canonical = TEXT
+lib.og-canonical {
+    typolink {
+        parameter.data = field: content_from_pid // TSFE:id
+        addQueryString = 1
+        addQueryString.method = GET
+        addQueryString.exclude = type
+        useCacheHash = 0
+        returnLast = url
+        forceAbsoluteUrl = 1
+    }
+}
+
+#default is summary; set by MetaTagAPI. In V10 page property
+page.meta.twitter:card = summary_large_image
+page.meta.twitter:card.replace = 1
+
+page.meta.keywords.field = keywords
+page.meta.keywords.ifEmpty =
+
+page.meta.abstract.field = abstract
+page.meta.abstract.ifEmpty =
+
+page.meta.og:type = website
+page.meta.og:url < lib.og-canonical
+
+page.shortcutIcon = {$plugin.tx_cbw_sitepackage.company.favicon}
+
+lib.header-Data = COA
+lib.header-Data {
+    10 = COA
+    10 {
+        10 = TEXT
+        10.value = <meta name="viewport" content="width=device-width, initial-scale=1">
+        20 = TEXT
+        20.value = <meta name="HandheldFriendly" content="true"/>
+        30 = TEXT
+        30.value = <meta name="MobileOptimized" content="360"/>
+    }
+
+    25 = FLUIDTEMPLATE
+    25 {
+        file = EXT:cbw_sitepackage/Resources/Private/Templates/Page/HeadIcons.html
+    }
+}
+[applicationContext == 'Development/Ddev' || 'Development/Testing' || 'Development/Staging']
+    page {
+        meta {
+            robots   = noindex,nofollow
+        }
+    }
+[end]
+
+
+
+#
+# part for the header rendering, templating in fluid
+#
+# ####
+lib.section-header = COA
+lib.section-header {
+    10 = FLUIDTEMPLATE
+    10 {
+        templateName = header
+        templateRootPaths {
+            0 = EXT:cbw_sitepackage/Resources/Private/Templates/Page
+        }
+
+        layoutRootPaths {
+            0 = EXT:cbw_sitepackage/Resources/Private/Layouts/Page
+        }
+
+        partialRootPaths {
+            0 = EXT:cbw_sitepackage/Resources/Private/Partials/Page
+        }
+        variables {
+            headerlogo < lib.page-head-logo
+            menu-main < lib.menu-main-fluid
+            menu-meta < lib.menu-meta
+            menu-language < lib.menu-language
+        }
+    }
+}

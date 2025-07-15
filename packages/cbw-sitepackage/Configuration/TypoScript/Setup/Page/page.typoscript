@@ -1,0 +1,41 @@
+page = PAGE
+
+page {
+    typeNum = 0
+
+    includeCSS.screen = EXT:cbw_sitepackage/Resources/Public/css/cbw_sitepackage.min.css
+
+    includeJS {
+        5 = TEXT
+        5.stdWrap.value(
+         var pageId = {field:uid};
+        )
+    }
+
+    includeJSFooter {
+        default = EXT:cbw_sitepackage/Resources/Public/js/default-libs.min.js
+        cbwsitepackage = EXT:cbw_sitepackage/Resources/Public/js/cbw_sitepackage.min.js
+        recaptcha = https://www.google.com/recaptcha/api.js?onload=myCallBack&render=explicit&hl=de
+        recaptcha.external = 1
+        recaptcha.defer = 1
+        recaptcha.async = 1
+    }
+
+
+    headerData < lib.header-Data
+
+    10 < lib.section-header
+
+    #    20 < lib.section-header-image
+
+    30 < lib.section-content
+
+
+    40 < lib.section-footer
+}
+
+[page["uid"] == 1]
+    page.bodyTagAdd = id="home"
+[else]
+    page.bodyTagAdd = id="sub"
+[end]

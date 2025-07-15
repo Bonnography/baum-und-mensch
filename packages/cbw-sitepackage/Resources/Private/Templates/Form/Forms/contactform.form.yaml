@@ -1,0 +1,170 @@
+
+renderingOptions:
+  submitButtonLabel: 'Mitteilung absenden'
+  useInvisibleRecaptcha: false
+type: Form
+identifier: contactform
+label: contactform
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: 'Nachricht vom Baum und Mensch Kontaktformular'
+      recipients:
+        benjamin.bomberg@codebomb-websolutions.de: 'Baum und Mensch'
+        heiko.paulick@gmail.com: 'Baum und Mensch'
+      senderAddress: 'info@codebomb-websolutions.de'
+      senderName: 'Baum und Mensch'
+      replyTo: '{email-contact-form}'
+      addHtmlPart: true
+      attachUploads: true
+      translation:
+        language: Default
+      title: ''
+      templateName: AdminEmailTemplate
+      templateRootPaths:
+        20: 'EXT:cbw_sitepackage/Resources/Private/Templates/Form/Frontend/Templates/Finishers/Email/Admin/'
+    identifier: EmailToReceiver
+  -
+    options:
+      subject: 'Deine Anfrage an Baum und Mensch'
+      recipients:
+        '{email-contact-form}': '{firstname} {lastname-contact-form}'
+      senderAddress: info@codebomb-websolutions.de
+      senderName: 'Baum und Mensch'
+      addHtmlPart: true
+      attachUploads: true
+      title: ''
+      templateName: UserEmailTemplate
+      templateRootPaths:
+        20: 'EXT:cbw_sitepackage/Resources/Private/Templates/Form/Frontend/Templates/Finishers/Email/User/'
+    identifier: EmailToSender
+  -
+    options:
+      message: ''
+      contentElementUid: ''
+    identifier: Confirmation
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: Page
+    identifier: page-1
+    label: ''
+    renderables:
+      -
+        type: GridRow
+        identifier: gridrow-1
+        label: 'Grid: Row'
+        renderables:
+          -
+            defaultValue: ''
+            type: Text
+            identifier: firstname
+            label: Vorname
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+                placeholder: Vorname*
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  xs:
+                    numbersOfColumnsToUse: '12'
+                  sm:
+                    numbersOfColumnsToUse: '12'
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Text
+            identifier: lastname-contact-form
+            label: Nachname
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+                placeholder: 'Nachname*'
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  sm:
+                    numbersOfColumnsToUse: '12'
+                  xs:
+                    numbersOfColumnsToUse: '12'
+            validators:
+              -
+                identifier: NotEmpty
+      -
+        type: GridRow
+        identifier: gridrow-2
+        label: 'Grid: Row'
+        renderables:
+          -
+            defaultValue: ''
+            type: Telephone
+            identifier: phone
+            label: Telefonnummer
+            properties:
+              elementDescription: ''
+              fluidAdditionalAttributes:
+                placeholder: Telefon
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  xs:
+                    numbersOfColumnsToUse: '12'
+                  sm:
+                    numbersOfColumnsToUse: '12'
+          -
+            defaultValue: ''
+            type: Email
+            identifier: email-contact-form
+            label: 'E-mail-address'
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+                placeholder: 'E-Mail-Adresse*'
+                pattern: '.*@\w{2,}\.\w{2,}'
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  xs:
+                    numbersOfColumnsToUse: '12'
+                  sm:
+                    numbersOfColumnsToUse: '12'
+            validators:
+              -
+                identifier: EmailAddress
+              -
+                identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: message-contact-form
+        label: Nachricht
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+            placeholder: 'Nachricht*'
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        type: Checkbox
+        identifier: consent-declaration
+        label: ''
+        properties:
+          elementDescription: ''
+          elementClassAttribute: declaration
+          fluidAdditionalAttributes:
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        renderingOptions:
+          doNotShowLabel: true
+        type: Recaptcha
+        identifier: recaptcha-1
+        label: reCAPTCHA
+        validators:
+          -
+            identifier: Recaptcha

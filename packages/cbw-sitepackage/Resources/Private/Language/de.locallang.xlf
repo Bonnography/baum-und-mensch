@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="de" datatype="plaintext" original="messages" date="2023-08-03UTC08:39:270">
+        <header>
+            <authorName>Benjamin Bomberg</authorName>
+            <authorEmail>benjamin.bomberg@codebomb-websolutions.de</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="news.showAll">
+                <target>Alle News</target>
+            </trans-unit>
+            <trans-unit id="news.moreInformation">
+                <target>Mehr erfahren</target>
+            </trans-unit>
+            <trans-unit id="news.backlink">
+                <target>Zurück zur News Übersicht</target>
+            </trans-unit>
+            <trans-unit id="concerts.date">
+                <target>Datum: </target>
+            </trans-unit>
+            <trans-unit id="concerts.location">
+                <target>Ort: </target>
+            </trans-unit>
+            <trans-unit id="concerts.price">
+                <target>Preis: </target>
+            </trans-unit>
+            <trans-unit id="concerts.moreInformation">
+                <target>Mehr erfahren</target>
+            </trans-unit>
+            <trans-unit id="concerts.lessInformation">
+                <target>Details ausblenden</target>
+            </trans-unit>
+            <trans-unit id="concerts.tickets">
+                <target>Tickets</target>
+            </trans-unit>
+            <trans-unit id="concerts.filterYear">
+                <target>Jahr auswählen</target>
+            </trans-unit>
+            <trans-unit id="concerts.filterCategory">
+                <target>Kategorie auswählen</target>
+            </trans-unit>
+            <trans-unit id="concerts.time">
+                <target>Beginn: </target>
+            </trans-unit>
+            <trans-unit id="concerts.noConcerts">
+                <target>Aktuell sind keine Konzerte verfügbar.</target>
+            </trans-unit>
+            <trans-unit id="footer.newsletterText">
+                <target>Hier könnte ein Newsletterfeld sein</target>
+            </trans-unit>
+            <trans-unit id="footer.socialMediaText">
+                <target>Social Media</target>
+            </trans-unit>
+
+            <trans-unit id="footer.newsletterButton">
+                <target>Newsletter abonnieren</target>
+            </trans-unit>
+            <trans-unit id="footer.newsLetter.email">
+                <target>E-Mail-Adresse</target>
+            </trans-unit>
+
+            <trans-unit id="languages.en">
+                <target>English</target>
+            </trans-unit>
+            <trans-unit id="languages.de">
+                <target>Deutsch</target>
+            </trans-unit>
+
+
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2024-03-02UTC13:21:430">
+        <header>
+            <authorName>Benjamin Bomberg</authorName>
+            <authorEmail>benjamin.bomberg@codebomb-websolutions.de</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="tx_inline_item.label">
+                <source>Child Element</source>
+            </trans-unit>
+            <trans-unit id="tx_inline_item.tt_content">
+                <source>tt_content</source>
+            </trans-unit>
+            <trans-unit id="tx_inline_item.item_type">
+                <source>Layout</source>
+            </trans-unit>
+            <trans-unit id="tx_inline_item.header">
+                <source>Child Element Header</source>
+            </trans-unit>
+            <trans-unit id="tx_inline_item.subheader">
+                <source>Child Element Subheader</source>
+            </trans-unit>
+            <trans-unit id="tx_inline_item.header_link.label">
+                <source>Child Element Header Link Label</source>
+            </trans-unit>
+            <trans-unit id="tx_inline_item.bodytext">
+                <source>Child Element Bodytext</source>
+            </trans-unit>
+            <trans-unit id="tx_inline_item.image">
+                <source>Child Element Image</source>
+            </trans-unit>
+            <trans-unit id="tx_inline_item.hidden">
+                <source>Child Element Hidden</source>
+            </trans-unit>
+            <trans-unit id="tx_inline_item.remove_cta_button">
+                <source>Remove CTA Button and link all</source>
+            </trans-unit>
+            <trans-unit id="tt_content.inlineElements.title">
+                <source>Inline Elements</source>
+            </trans-unit>
+            <trans-unit id="tt_content.inlineElements.wizard.title">
+                <source>Inline Elements</source>
+            </trans-unit>
+            <trans-unit id="tt_content.inlineElements.wizard.description">
+                <source>Wrapper for Accordion / 2-Cols / 3-Cols </source>
+            </trans-unit>
+            <trans-unit id="tt_content.inlineElements.inline_layout.0">
+                <source>2 Columns</source>
+            </trans-unit>
+            <trans-unit id="tt_content.inlineElements.inline_layout.1">
+                <source>3 Columns</source>
+            </trans-unit>
+            <trans-unit id="tt_content.inlineElements.inline_layout.2">
+                <source>4 Columns</source>
+            </trans-unit>
+
+            <trans-unit id="sys_redirect.target_statuscode.410">
+                <source>410 Gone</source>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 240 240" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="News">
+        <path d="M30,0L30,240L210,240L210,60L150,0L30,0Z" style="fill:white;fill-rule:nonzero;"/>
+        <g transform="matrix(1,0,0,1,-19.1996,134.252)">
+            <text x="84.913px" y="56.748px" style="font-family:'GillSans-Bold', 'Gill Sans', sans-serif;font-weight:700;font-size:120px;fill:rgb(102,102,102);">N</text>
+        </g>
+        <path d="M195,75L195,150L135,75L195,75Z" style="fill-opacity:0.2;fill-rule:nonzero;"/>
+        <path d="M30,0L30,240L210,240L210,60L209.82,60L209.88,59.88L150.12,0.09L150,0.21L150,0L30,0ZM45,15L135,15L135,75L195,75L195,225L45,225L45,15Z" style="fill:rgb(153,153,153);fill-rule:nonzero;"/>
+    </g>
+</svg>
