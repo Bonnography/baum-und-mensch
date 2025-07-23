@@ -13,12 +13,12 @@ call_user_func(
         }
 
         // add the type definition & configuration
-        $table['types']['sliderElements'] = [
+        $table['types']['slider'] = [
             'showitem' => '
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
                     --palette--;;general,
+                    --palette--;;space-palette,
                     --palette--;;headers,
-                    inline_layout,
                     tx_inline_item,
                 --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
                     --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
@@ -43,9 +43,8 @@ call_user_func(
                                     'showitem' => '
                                         tt_content,
                                         header,
-                                        subheader,
                                         bodytext,
-                                        --palette--;;teaserPalette,
+                                        --palette--;;sliderPalette,
                                         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,
                                         --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
                                         --palette--;;hiddenLanguagePalette
@@ -66,15 +65,15 @@ call_user_func(
         ];
 
         // define the type icon
-        $table['ctrl']['typeicon_classes']['inlineElements'] = 'content-carousel-image';
+        $table['ctrl']['typeicon_classes']['slider'] = 'content-carousel-image';
 
         // add the type as an option to the CType column
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
             'tt_content',
             'CType',
             [
-                'label' => 'LLL:EXT:cbw_sitepackage/Resources/Private/Language/backend.xlf:tt_content.inlineElements.title',
-                'value' => 'inlineElements',
+                'label' => 'LLL:EXT:cbw_sitepackage/Resources/Private/Language/backend.xlf:tt_content.slider.title',
+                'value' => 'slider',
                 'icon' => 'content-carousel-image',
                 'group' => 'default'
             ],

@@ -91,6 +91,10 @@ return [
           --linebreak--,
           cta, cta_text,'
         ],
+        'sliderPalette' => [
+          'showitem' => '
+          image,image_position,'
+        ],
     ],
     'columns' => [
         'tt_content' => [

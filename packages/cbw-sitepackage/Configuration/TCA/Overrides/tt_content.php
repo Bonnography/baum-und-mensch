@@ -12,13 +12,14 @@ defined('TYPO3') or die();
 
 // include misc
 //include_once('path-to-file.php');
-include_once('misc/remove_bottom_space.php');
+//include_once('misc/remove_bottom_space.php');
 include_once('misc/button_style.php');
+include_once('misc/change_space.php');
 
 // include ContentElements
 //include_once('path-to-file.php');
 include_once('ContentElements/headerImage.php');
-include_once('ContentElements/news.php');
+include_once('ContentElements/slider.php');
 include_once('ContentElements/headline.php');
 include_once('ContentElements/image.php');
 include_once('ContentElements/text.php');
@@ -51,4 +52,10 @@ call_user_func(
             ],
         ]);
     }
+);
+
+$GLOBALS['TCA']['tt_content']['types']['textmedia']['showitem'] = str_replace(
+    '--palette--;;headers,',
+    '--palette--;;headers,--palette--;;space-palette,bodytext,',
+    $GLOBALS['TCA']['tt_content']['types']['header']['showitem']
 );

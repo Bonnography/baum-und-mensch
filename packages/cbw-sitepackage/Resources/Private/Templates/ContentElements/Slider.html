@@ -1,0 +1,58 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="Main">
+    <f:if condition="{data.header}">
+        <f:render section="Header" optional="true">
+            <f:render partial="Header/All" arguments="{_all}" />
+        </f:render>
+    </f:if>
+    <div class="splide custom-carousel" id="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <f:for each="{sliderElements}" as="element" iteration="iterator">
+                    <li class="splide__slide">
+                        <f:if condition="{element.data.image_position} == 0">
+                            <f:then>
+                                <f:render section="imageContainer" arguments="{_all}"/>
+                                <f:render section="textContainer" arguments="{_all}"/>
+                            </f:then>
+                            <f:else>
+                                <f:render section="textContainer" arguments="{_all}"/>
+                                <f:render section="imageContainer" arguments="{_all}"/>
+                            </f:else>
+                        </f:if>
+                    </li>
+                </f:for>
+            </ul>
+        </div>
+    </div>
+
+</f:section>
+<f:section name="textContainer">
+    <f:if condition="{element.data.header}">
+        <h3>{element.data.header}</h3>
+    </f:if>
+    <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{element.data.bodytext}</f:format.html>
+</f:section>
+<f:section name="imageContainer">
+    <f:if condition="{element.images}">
+        <f:for each="{element.images}" as="image">
+            <picture>
+                <source
+                        media="(max-width: 375px)"
+                        srcset="{f:uri.image(image: image, maxWidth: 375)}"
+                />
+                <source
+                        media="(max-width: 768px)"
+                        srcset="{f:uri.image(image: image, maxWidth: 560)}"
+                />
+                <source
+                        media="(min-width: 1200px)"
+                        srcset="{f:uri.image(image: image, maxWidth: 420)}"
+                />
+                <f:image image="{image}" class="img-fluid{f:if(condition: '{element.data.image_position} == 0', then: ' image-position__top', else: ' image-position__bottom')}" loading="lazy" alt="{image.alternative}" title="{image.title}" />
+            </picture>
+        </f:for>
+    </f:if>
+</f:section>
+</html>

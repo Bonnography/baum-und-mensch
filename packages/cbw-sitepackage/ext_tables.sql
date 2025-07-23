@@ -5,6 +5,8 @@ CREATE TABLE tt_content
 (
     tx_inline_item int(11) unsigned DEFAULT '0',
     inline_layout  int(11) unsigned DEFAULT '0' NOT NULL,
+    change_space_top  int(11) unsigned DEFAULT '100' NOT NULL,
+    change_space_bottom  int(11) unsigned DEFAULT '100' NOT NULL,
 );
 
 #

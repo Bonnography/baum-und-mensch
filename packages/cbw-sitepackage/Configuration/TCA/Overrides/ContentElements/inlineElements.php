@@ -43,6 +43,7 @@ call_user_func(
             'showitem' => '
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
                     --palette--;;general,
+                    --palette--;;space-palette,
                     --palette--;;headers,
                     inline_layout,
                     tx_inline_item,

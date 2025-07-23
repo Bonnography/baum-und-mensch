@@ -39,6 +39,9 @@
             <trans-unit id="tt_content.inlineElements.title">
                 <source>Inline Elements</source>
             </trans-unit>
+            <trans-unit id="tt_content.slider.title">
+                <source>Slider Element</source>
+            </trans-unit>
             <trans-unit id="tt_content.inlineElements.wizard.title">
                 <source>Inline Elements</source>
             </trans-unit>
