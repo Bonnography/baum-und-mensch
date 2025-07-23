@@ -52,10 +52,10 @@
               <source>Submit</source>
           </trans-unit>
            <trans-unit id="element.consent-declaration.properties.value">
-               <source>I have read the <![CDATA[<a target="_blank" rel="noopener" href="#">privacy policy</a> and agree to its content.]]></source>
+               <source>I have read the <![CDATA[<a target="_blank" rel="noopener" href="/datenschutz">privacy policy</a> and agree to its content.]]></source>
            </trans-unit>
            <trans-unit id="element.consent-declaration.properties.label">
-               <source>I have read the <![CDATA[<a target="_blank" rel="noopener" href="#">privacy policy</a> and agree to its content.]]></source>
+               <source>I have read the <![CDATA[<a target="_blank" rel="noopener" href="/datenschutz">privacy policy</a> and agree to its content.]]></source>
            </trans-unit>
            <trans-unit id="form.confirmation.yourMessage">
              <source>Your message</source>

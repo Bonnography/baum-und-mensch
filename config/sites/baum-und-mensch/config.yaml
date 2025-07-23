@@ -30,5 +30,10 @@ languages:
     fallbacks: ''
     flag: en-us-gb
     languageId: 1
+routeEnhancers:
+  PageTypeSuffix:
+    type: PageType
+    map:
+      sitemap.xml: 1533906435
 rootPageId: 1
 websiteTitle: 'Baum und Mensch Website'

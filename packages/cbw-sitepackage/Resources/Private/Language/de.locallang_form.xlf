@@ -55,10 +55,10 @@
                <target>Absenden</target>
            </trans-unit>
            <trans-unit id="element.consent-declaration.properties.value">
-               <target>Ich habe die <![CDATA[<a target="_blank" rel="noopener" href="#">Datenschutzerklärung</a> gelesen und stimme ihrem Inhalt zu.]]></target>
+               <target>Ich habe die <![CDATA[<a target="_blank" rel="noopener" href="/datenschutz">Datenschutzerklärung</a> gelesen und stimme ihrem Inhalt zu.]]></target>
            </trans-unit>
            <trans-unit id="element.consent-declaration.properties.label">
-               <target>Ich habe die <![CDATA[<a target="_blank" rel="noopener" href="#">Datenschutzerklärung</a> gelesen und stimme ihrem Inhalt zu.]]></target>
+               <target>Ich habe die <![CDATA[<a target="_blank" rel="noopener" href="/datenschutz">Datenschutzerklärung</a> gelesen und stimme ihrem Inhalt zu.]]></target>
            </trans-unit>
            <trans-unit id="form.confirmation.yourMessage">
               <target>Deine Nachricht</target>
