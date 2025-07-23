@@ -34,7 +34,7 @@ lib.menu-main-fluid {
         }
         30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
         30 {
-            special = directory
+            special = list
             special.value = {$plugin.tx_cbw_sitepackage.page.metaMenu}
             includeNotInMenu = 1
             as = metaMenu
@@ -78,9 +78,8 @@ lib.menu-footer {
 
 lib.menu-meta = HMENU
 lib.menu-meta {
-    includeNotInMenu = 1
-    special = directory
-    special.value = {$plugin.tx_cbw_sitepackage.page.metaMenu}
+    special = list
+    special.value = 4,5
 
     1 = TMENU
     1 {

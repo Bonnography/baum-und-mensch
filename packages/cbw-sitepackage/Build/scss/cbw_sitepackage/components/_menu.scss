@@ -2,7 +2,24 @@
  * Mobile Navigation
  */
 
+.mobile-meta-menu {
+  margin: 75px auto 0 auto;
 
+  .menu-meta-link {
+    color: #fff;
+    display: inline-flex;
+    &:before {
+      content:"|";
+      margin: 0 7px;
+      display: inline-flex;
+    }
+    &:first-child {
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
 nav#menu-main {
   position: absolute;
   color: #fff;
@@ -15,10 +32,12 @@ nav#menu-main {
   transition: transform 0.3s ease-in-out;
   z-index: 1;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
 
   &.open {
-    display: flex;
     transform: translateY(0);
   }
 
@@ -50,7 +69,9 @@ nav#menu-main {
 
       &.active {
         .menu-main_item__link {
-          color: $link-color;
+          font-weight: bold;
+          text-decoration: underline;
+          color: $second-color;
         }
       }
       .w-submenu__opener {
@@ -191,6 +212,7 @@ nav#menu-main {
     height: 80px;
     display: flex;
     justify-content: flex-end;
+    flex-direction: row;
     align-items: center;
     background: #fff;
     transition: unset;

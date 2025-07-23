@@ -189,11 +189,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
     };
     if (g >= 768) {
         window.addEventListener("load", function(){
-            equalheight('.content-column-item p');
+            equalheight('.content-column-item .bodytext');
         });
         window.addEventListener("resize", function(){
             setTimeout(function(){
-                equalheight('.content-column-item p');
+                equalheight('.content-column-item .bodytext');
             });
         });
     }

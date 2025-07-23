@@ -22,31 +22,29 @@
                         </f:if>
                     </li>
                 </f:for>
-
-                <div class="mobile-meta-menu d-xl-none">
-                    <f:for each="{metaMenu}" as="metaMenuItem">
-                        <f:link.typolink class="menu-meta-link" parameter="{metaMenuItem.link}">
-                            {metaMenuItem.title}
-                        </f:link.typolink>
-                    </f:for>
-                    <f:if condition="{languageMenu.1.available}">
-                        <f:for each="{languageMenu}" as="languages">
-                            <f:if condition="{languages.active}">
-                                <f:else>
-                                    <f:if condition="{languages.available}">
-                                        <f:link.typolink parameter="{languages.link}"
-                                                         additionalAttributes="{hreflang:'{languages.hreflang}'}"
-                                                         title="{languages.title}" class="menu-meta-link menu-meta-link__languages {languages.title -> f:format.case(mode: 'lower')}{f:if(condition: languages.active, then: ' active')}">
-                                            <f:translate key="LLL:EXT:cbw_sitepackage/Resources/Private/Language/locallang.xlf:languages.{languages.twoLetterIsoCode}"/>
-                                        </f:link.typolink>
-                                    </f:if>
-                                </f:else>
-                            </f:if>
-                        </f:for>
-                    </f:if>
-                </div>
             </ul>
-            <div class="splash"></div>
+            <div class="mobile-meta-menu d-xl-none">
+                <f:for each="{metaMenu}" as="metaMenuItem">
+                    <f:link.typolink class="menu-meta-link" parameter="{metaMenuItem.link}">
+                        {metaMenuItem.title}
+                    </f:link.typolink>
+                </f:for>
+                <f:if condition="{languageMenu.1.available}">
+                    <f:for each="{languageMenu}" as="languages">
+                        <f:if condition="{languages.active}">
+                            <f:else>
+                                <f:if condition="{languages.available}">
+                                    <f:link.typolink parameter="{languages.link}"
+                                                     additionalAttributes="{hreflang:'{languages.hreflang}'}"
+                                                     title="{languages.title}" class="menu-meta-link menu-meta-link__languages {languages.title -> f:format.case(mode: 'lower')}{f:if(condition: languages.active, then: ' active')}">
+                                        <f:translate key="LLL:EXT:cbw_sitepackage/Resources/Private/Language/locallang.xlf:languages.{languages.twoLetterIsoCode}"/>
+                                    </f:link.typolink>
+                                </f:if>
+                            </f:else>
+                        </f:if>
+                    </f:for>
+                </f:if>
+            </div>
         </nav>
 
 

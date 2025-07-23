@@ -119,7 +119,7 @@
                 </div>
             </f:if>
             <f:if condition="{inlineElement.data.cta} && {inlineElement.data.cta_text}">
-                <f:link.typolink parameter="{inlineElement.data.cta}" class="btn btn-{f:if(condition: '{inlineElement.data.button_style} == 1', then: 'secondary', else: 'primary')}">
+                <f:link.typolink parameter="{inlineElement.data.cta}" class="btn btn-{f:if(condition: '{inlineElement.data.button_style} == 1', then: 'secondary', else: 'primary')} content-column-item__cta">
                     {inlineElement.data.cta_text}
                 </f:link.typolink>
             </f:if>
