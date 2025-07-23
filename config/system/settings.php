@@ -1,7 +1,7 @@
 <?php
 return [
     'BE' => [
-        'debug' => true,
+        'debug' => false,
         'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$RzNtaG43bS9KVUIzUDBOQg$8JlByh+9+z9at5FxR5Qh2QLwHSz6FSPf063OxbD8WxM',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
@@ -124,7 +124,7 @@ return [
     ],
     'MAIL' => [
         'transport' => 'sendmail',
-        'transport_sendmail_command' => '/usr/local/bin/mailpit sendmail -t --smtp-addr 127.0.0.1:1025',
+        'transport_sendmail_command' => '/usr/sbin/sendmail -t -i',
         'transport_smtp_encrypt' => '',
         'transport_smtp_password' => '',
         'transport_smtp_server' => '',
@@ -159,7 +159,7 @@ return [
             'frontend.cache.autoTagging' => true,
             'security.system.enforceAllowedFileExtensions' => true,
         ],
-        'sitename' => 'Baum und Mensch DDEV',
+        'sitename' => 'Baum und Mensch Website',
         'systemMaintainers' => [
             1,
         ],
