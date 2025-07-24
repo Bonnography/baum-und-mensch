@@ -63,6 +63,9 @@
         <trans-unit id="tt_content.change_space_top">
             <source>Change Space top</source>
         </trans-unit>
+        <trans-unit id="tt_content.col_size">
+            <source>Col Layout</source>
+        </trans-unit>
         </body>
     </file>
 </xliff>

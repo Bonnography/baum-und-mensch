@@ -25,6 +25,7 @@ include_once('ContentElements/image.php');
 include_once('ContentElements/text.php');
 include_once('ContentElements/inlineElements.php');
 include_once('ContentElements/accordion.php');
+include_once('ContentElements/textmedia.php');
 
 $GLOBALS['TCA']['tt_content']['ctrl']['label_alt'] = 'headline, bodytext';
 
@@ -53,10 +54,4 @@ call_user_func(
             ],
         ]);
     }
-);
-
-$GLOBALS['TCA']['tt_content']['types']['textmedia']['showitem'] = str_replace(
-    '--palette--;;headers,',
-    '--palette--;;headers,--palette--;;space-palette,bodytext,',
-    $GLOBALS['TCA']['tt_content']['types']['header']['showitem']
 );

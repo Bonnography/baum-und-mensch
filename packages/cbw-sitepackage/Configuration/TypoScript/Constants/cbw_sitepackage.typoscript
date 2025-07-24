@@ -33,3 +33,4 @@ plugin.tx_cbw_sitepackage {
         metaMenu = 4,5
     }
 }
+styles.content.textmedia.linkWrap.lightboxCssClass = glightbox

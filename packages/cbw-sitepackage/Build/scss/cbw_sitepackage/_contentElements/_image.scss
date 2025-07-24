@@ -7,7 +7,8 @@
     padding: 0 20px;
   }
   img {
-    object-fit: fill;
+    object-fit: cover;
+    object-position: center;
   }
   &-items {
     &-2, &-3 {

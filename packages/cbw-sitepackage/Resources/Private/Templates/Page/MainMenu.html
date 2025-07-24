@@ -11,7 +11,7 @@
                         </f:link.typolink>
 
                         <f:if condition="{listitem.children}">
-                                <span class="w-submenu__opener lvl1 text-center {f:if(condition: listitem.active, then: 'open')}"></span>
+                                <span class="w-submenu__opener lvl1 text-center{f:if(condition: listitem.active, then: ' open')}"></span>
                             <ul class="menu-main__sub lvl2">
                                 <f:for each="{listitem.children}" as="lvl2Item">
                                     <li class="menu-main__sub-item lvl2 {f:if(condition: lvl2Item.active, then: 'active')} {f:if(condition: '({lvl2Item.data.doktype} == 4 && {lvl2Item.data.shortcut} == {data.uid})', then: 'active')}">
