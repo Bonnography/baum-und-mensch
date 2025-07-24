@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+        accordion {
+            iconIdentifier = ce-accordion-icon
+            title = LLL:EXT:cbw_sitepackage/Resources/Private/Language/locallang_tca.xlf:tt_content.accordion.wizard.title
+            description = LLL:EXT:cbw_sitepackage/Resources/Private/Language/locallang_tca.xlf:tt_content.accordion.wizard.description
+            tt_content_defValues {
+                CType = accordion
+            }
+        }
+    }
+    show := addToList(accordion)
+}

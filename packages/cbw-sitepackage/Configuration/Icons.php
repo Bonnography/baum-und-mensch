@@ -15,4 +15,8 @@ return [
         'provider' => SvgIconProvider::class,
         'source' => 'EXT:cbw_sitepackage/Resources/Public/images/backend/PageTypes/websiteNews-hideinmenu.svg'
     ],
+    'ce-accordion-icon' => [
+        'provider' => SvgIconProvider::class,
+        'source' => 'EXT:cbw_sitepackage/Resources/Public/images/backend/accordion.svg'
+    ],
 ];

@@ -42,6 +42,12 @@
         <trans-unit id="tt_content.slider.wizard.description">
             <source>Element for Slider Content</source>
         </trans-unit>
+        <trans-unit id="tt_content.accordion.wizard.title">
+            <source>Accordion Element</source>
+        </trans-unit>
+        <trans-unit id="tt_content.accordion.wizard.description">
+            <source>Element for Accordion Content</source>
+        </trans-unit>
         <trans-unit id="inline_item">
             <source>Item</source>
         </trans-unit>

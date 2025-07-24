@@ -24,6 +24,7 @@ include_once('ContentElements/headline.php');
 include_once('ContentElements/image.php');
 include_once('ContentElements/text.php');
 include_once('ContentElements/inlineElements.php');
+include_once('ContentElements/accordion.php');
 
 $GLOBALS['TCA']['tt_content']['ctrl']['label_alt'] = 'headline, bodytext';
 

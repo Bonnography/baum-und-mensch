@@ -260,6 +260,40 @@ tt_content {
             }
         }
     }
+    accordion < lib.contentElement
+    accordion {
+        templateName = Accordion
+        templateRootPaths {
+            10 = EXT:cbw_sitepackage/Resources/Private/Templates/ContentElements/
+        }
+        partialRootPaths {
+            10 = EXT:cbw_sitepackage/Resources/Private/Partials/ContentElements/
+        }
+        layoutRootPaths {
+            10 = EXT:cbw_sitepackage/Resources/Private/Layouts/ContentElements/
+        }
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            10 {
+                table = tx_inline_item
+                pidInList.field = pid
+                where {
+                    data = field:uid
+                    intval = 1
+                    wrap = tt_content=|
+                }
+                orderBy = sorting
+                as = accordionElements
+                dataProcessing {
+                    10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                    10 {
+                        references.fieldName = image
+                        as = images
+                    }
+                }
+            }
+        }
+    }
     form_formframework {
         layoutRootPaths {
             10 = EXT:cbw_sitepackage/Resources/Private/Layouts/ContentElements/
