@@ -2,35 +2,38 @@
 <f:spaceless>
     <f:switch expression="{data.CType}">
         <f:case value="news">
-            <f:variable name="ce-class" value="news" />
+            <f:variable name="ce-class" value="content news content-padding__{data.change_space_top}-{data.change_space_bottom}" />
         </f:case>
         <f:case value="textmedia">
-            <f:variable name="ce-class" value="textmedia" />
+            <f:variable name="ce-class" value="content textmedia content-padding__{data.change_space_top}-{data.change_space_bottom}" />
         </f:case>
         <f:case value="text">
-            <f:variable name="ce-class" value="text" />
+            <f:variable name="ce-class" value="content text content-padding__{data.change_space_top}-{data.change_space_bottom}" />
         </f:case>
         <f:case value="pagesOverview">
-            <f:variable name="ce-class" value="pagesOverview" />
+            <f:variable name="ce-class" value="content pagesOverview content-padding__{data.change_space_top}-{data.change_space_bottom}" />
         </f:case>
         <f:case value="inlineElements">
-            <f:variable name="ce-class" value="inlineElements" />
+            <f:variable name="ce-class" value="content inlineElements content-padding__{data.change_space_top}-{data.change_space_bottom}" />
         </f:case>
         <f:case value="headline">
-            <f:variable name="ce-class" value="headline" />
+            <f:variable name="ce-class" value="content headline content-padding__{data.change_space_top}-{data.change_space_bottom}" />
+        </f:case>
+        <f:case value="headerImage">
+            <f:variable name="ce-class" value="headerImage" />
         </f:case>
         <f:case value="image">
-            <f:variable name="ce-class" value="image" />
+            <f:variable name="ce-class" value="content image content-padding__{data.change_space_top}-{data.change_space_bottom}" />
         </f:case>
         <f:case value="slider">
-            <f:variable name="ce-class" value="slider" />
+            <f:variable name="ce-class" value="content slider content-padding__{data.change_space_top}-{data.change_space_bottom}" />
         </f:case>
         <f:case value="form_formframework">
-            <f:variable name="ce-class" value="content-form" />
+            <f:variable name="ce-class" value="content content-form content-padding__{data.change_space_top}-{data.change_space_bottom}" />
         </f:case>
     </f:switch>
 </f:spaceless>
-<div id="c{data.uid}" class="content {ce-class} content-padding__{data.change_space_top}-{data.change_space_bottom} {f:if(condition: '{data.layout} != 0', then: '{f:render(partial:\'Background/Background\', arguments:\'{data: data}\')}')}">
+<div id="c{data.uid}" class="{ce-class} {f:if(condition: '{data.layout} != 0', then: '{f:render(partial:\'Background/Background\', arguments:\'{data: data}\')}')}">
     <f:if condition="{data.CType} == 'form_formframework'">
         <f:then>
             <f:if condition="{data.header}">

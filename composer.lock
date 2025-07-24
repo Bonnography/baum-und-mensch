@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f077285eff848fdc902a01aee65d184e",
+    "content-hash": "f391bb398e092feaf252899f777e824f",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -5224,6 +5224,71 @@
             "time": "2024-10-11T08:11:39+00:00"
         },
         {
+            "name": "typo3/cms-adminpanel",
+            "version": "v13.4.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/adminpanel.git",
+                "reference": "d50c35efb5ca62b07e3bce33b997b837549a2264"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/adminpanel/zipball/d50c35efb5ca62b07e3bce33b997b837549a2264",
+                "reference": "d50c35efb5ca62b07e3bce33b997b837549a2264",
+                "shasum": ""
+            },
+            "require": {
+                "psr/http-message": "^1.1 || ^2.0",
+                "psr/http-server-handler": "^1.0",
+                "psr/http-server-middleware": "^1.0",
+                "typo3/cms-backend": "13.4.15",
+                "typo3/cms-core": "13.4.15",
+                "typo3/cms-fluid": "13.4.15",
+                "typo3/cms-frontend": "13.4.15",
+                "typo3fluid/fluid": "^4.3.0"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "adminpanel"
+                },
+                "branch-alias": {
+                    "dev-main": "13.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Adminpanel\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "TYPO3 CMS Admin Panel - The Admin Panel displays information about your site in the frontend and contains a range of metrics including debug and caching information.",
+            "homepage": "https://typo3.org",
+            "support": {
+                "chat": "https://typo3.org/help",
+                "docs": "https://docs.typo3.org/c/typo3/cms-adminpanel/main/en-us/",
+                "issues": "https://forge.typo3.org",
+                "source": "https://github.com/typo3/typo3"
+            },
+            "time": "2025-07-08T09:23:09+00:00"
+        },
+        {
             "name": "typo3/cms-backend",
             "version": "v13.4.15",
             "source": {
@@ -6439,64 +6504,6 @@
             "time": "2025-07-08T09:23:09+00:00"
         },
         {
-            "name": "typo3/cms-reactions",
-            "version": "v13.4.15",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TYPO3-CMS/reactions.git",
-                "reference": "8b3491e96df392ce8a13936faa8efb2fbe3c6735"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/reactions/zipball/8b3491e96df392ce8a13936faa8efb2fbe3c6735",
-                "reference": "8b3491e96df392ce8a13936faa8efb2fbe3c6735",
-                "shasum": ""
-            },
-            "require": {
-                "typo3/cms-core": "13.4.15"
-            },
-            "conflict": {
-                "typo3/cms": "*"
-            },
-            "suggest": {
-                "typo3/cms-lowlevel": "To display registered reactions in the configuration module"
-            },
-            "type": "typo3-cms-framework",
-            "extra": {
-                "typo3/cms": {
-                    "extension-key": "reactions"
-                },
-                "branch-alias": {
-                    "dev-main": "13.4.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Reactions\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
-                }
-            ],
-            "description": "TYPO3 CMS Reactions - Handle incoming Webhooks for TYPO3",
-            "homepage": "https://typo3.org",
-            "support": {
-                "chat": "https://typo3.org/help",
-                "docs": "https://docs.typo3.org/c/typo3/cms-reactions/main/en-us/",
-                "issues": "https://forge.typo3.org",
-                "source": "https://github.com/typo3/typo3"
-            },
-            "time": "2025-07-08T09:23:09+00:00"
-        },
-        {
             "name": "typo3/cms-recycler",
             "version": "v13.4.15",
             "source": {
@@ -6552,6 +6559,74 @@
             "support": {
                 "chat": "https://typo3.org/help",
                 "docs": "https://docs.typo3.org/c/typo3/cms-recycler/main/en-us/",
+                "issues": "https://forge.typo3.org",
+                "source": "https://github.com/typo3/typo3"
+            },
+            "time": "2025-07-08T09:23:09+00:00"
+        },
+        {
+            "name": "typo3/cms-redirects",
+            "version": "v13.4.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/redirects.git",
+                "reference": "df96108026654af46bbd2f9311df42fba88df29d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/redirects/zipball/df96108026654af46bbd2f9311df42fba88df29d",
+                "reference": "df96108026654af46bbd2f9311df42fba88df29d",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": "4.2.*",
+                "psr/http-message": "^1.1 || ^2.0",
+                "psr/log": "^3.0.1",
+                "symfony/console": "^7.2",
+                "typo3/cms-backend": "13.4.15",
+                "typo3/cms-core": "13.4.15",
+                "typo3fluid/fluid": "^4.3.0"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "suggest": {
+                "typo3/cms-reports": "Get reports of redirects",
+                "typo3/cms-scheduler": "Execute commands to update redirect status"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "redirects"
+                },
+                "branch-alias": {
+                    "dev-main": "13.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Redirects\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "TYPO3 CMS Redirects - Create manual redirects, list existing redirects and automatically createredirects on slug changes.",
+            "homepage": "https://typo3.org",
+            "support": {
+                "chat": "https://typo3.org/help",
+                "docs": "https://docs.typo3.org/c/typo3/cms-redirects/main/en-us/",
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },
@@ -6911,65 +6986,6 @@
             "support": {
                 "chat": "https://typo3.org/help",
                 "docs": "https://docs.typo3.org",
-                "issues": "https://forge.typo3.org",
-                "source": "https://github.com/typo3/typo3"
-            },
-            "time": "2025-07-08T09:23:09+00:00"
-        },
-        {
-            "name": "typo3/cms-webhooks",
-            "version": "v13.4.15",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TYPO3-CMS/webhooks.git",
-                "reference": "9c3ffd39b629e390359983866ad81bb8f6d241f2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/webhooks/zipball/9c3ffd39b629e390359983866ad81bb8f6d241f2",
-                "reference": "9c3ffd39b629e390359983866ad81bb8f6d241f2",
-                "shasum": ""
-            },
-            "require": {
-                "symfony/uid": "^7.2",
-                "typo3/cms-core": "13.4.15"
-            },
-            "conflict": {
-                "typo3/cms": "*"
-            },
-            "suggest": {
-                "typo3/cms-lowlevel": "To display registered webhooks in the configuration module"
-            },
-            "type": "typo3-cms-framework",
-            "extra": {
-                "typo3/cms": {
-                    "extension-key": "webhooks"
-                },
-                "branch-alias": {
-                    "dev-main": "13.4.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Webhooks\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
-                }
-            ],
-            "description": "TYPO3 CMS Webhooks - Handle outgoing Webhooks for TYPO3",
-            "homepage": "https://typo3.org",
-            "support": {
-                "chat": "https://typo3.org/help",
-                "docs": "https://docs.typo3.org/c/typo3/cms-webhooks/main/en-us/",
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },

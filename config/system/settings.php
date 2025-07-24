@@ -50,6 +50,10 @@ return [
             'robotMode' => '0',
             'verify_server' => 'https://www.google.com/recaptcha/api/siteverify',
         ],
+        'redirects' => [
+            'showCheckIntegrityInfoInReports' => '1',
+            'showCheckIntegrityInfoInReportsSeconds' => '86400',
+        ],
         'staticfilecache' => [
             'backendDisplayMode' => 'both',
             'boostMode' => '0',

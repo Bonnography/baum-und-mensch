@@ -75,7 +75,7 @@ config {
     additionalHeaders.10.header = strict-transport-security:max-age=31536000;includeSubDomains; preload
     # is possible only for internet explorer Content Security Police is newer and replace x frame options
     additionalHeaders.20.header = X-Frame-Options:SAMEORIGIN
-    additionalHeaders.30.header = Content-Security-Policy: frame-ancestors 'none';upgrade-insecure-requests; base-uri 'self';
+    additionalHeaders.30.header = Content-Security-Policy: frame-ancestors 'self';upgrade-insecure-requests; base-uri 'self';
     additionalHeaders.40.header = X-Content-Type-Options: nosniff
     additionalHeaders.50.header = Permissions-Policy: geolocation=(), midi=(), camera=(), usb=(), magnetometer=(), accelerometer=(), vr=(), speaker=(), ambient-light-sensor=(), gyroscope=(), microphone=()
     additionalHeaders.60.header = Referrer-Policy:strict-origin-when-cross-origin
