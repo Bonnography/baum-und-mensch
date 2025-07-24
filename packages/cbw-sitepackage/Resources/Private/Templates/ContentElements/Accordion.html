@@ -19,7 +19,23 @@
                     </div>
                     <div id="collapse-{accordionIterator.index}" class="accordion-collapse collapse{f:if(condition: '{accordionIterator.isFirst}', then: ' show')}" data-bs-parent="#accordion{data.uid}">
                         <div class="accordion-body">
-                            <f:format.html parseFuncTSPath="lib.parseFunc_RTE"> <f:spaceless>{element.data.bodytext}</f:spaceless></f:format.html>
+                            <f:if condition="{element.images}">
+                                <f:then>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <f:for each="{element.images}" as="image">
+                                                <f:render partial="Media/Type" arguments="{file: image, dimensions: image.dimensions, data: data, settings: settings}"/>
+                                            </f:for>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <f:format.html parseFuncTSPath="lib.parseFunc_RTE"> <f:spaceless>{element.data.bodytext}</f:spaceless></f:format.html>
+                                        </div>
+                                    </div>
+                                </f:then>
+                                <f:else>
+                                    <f:format.html parseFuncTSPath="lib.parseFunc_RTE"> <f:spaceless>{element.data.bodytext}</f:spaceless></f:format.html>
+                                </f:else>
+                            </f:if>
                         </div>
                     </div>
                 </div>

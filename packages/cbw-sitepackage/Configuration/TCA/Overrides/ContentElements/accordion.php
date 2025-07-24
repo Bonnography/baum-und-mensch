@@ -51,7 +51,7 @@ call_user_func(
                                         tt_content,
                                         header,
                                         bodytext,
-                                        --palette--;;teaserPalette,
+                                        image,
                                         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,
                                         --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
                                         --palette--;;hiddenLanguagePalette
