@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2023-08-03UTC08:39:270">
+        <header>
+            <authorName>Benjamin Bomberg</authorName>
+            <authorEmail>benjamin.bomberg@codebomb-websolutions.de</authorEmail>
+        </header>
+        <body>
+        <trans-unit id="tt_content.header_position">
+            <target>Header position</target>
+        </trans-unit>
+        <trans-unit id="tt_content.relatedNews">
+            <target>Related News?</target>
+        </trans-unit>
+        <trans-unit id="tt_content.news.wizard.title">
+            <target>News Element</target>
+        </trans-unit>
+        <trans-unit id="tt_content.news.wizard.description">
+            <target>Element zum Anzeigen von Nachrichten im Frontend und zur Auswahl zwischen verwandten Nachrichten oder Listenansicht</target>
+        </trans-unit>
+        <trans-unit id="tt_content.headerImage.wizard.title">
+            <target>Headerbild</target>
+        </trans-unit>
+        <trans-unit id="tt_content.headerImage.wizard.description">
+            <target>Überschriftenelement für die Anzeige von Überschriften</target>
+        </trans-unit>
+        <trans-unit id="tt_content.headline.wizard.title">
+            <target>Headline</target>
+        </trans-unit>
+        <trans-unit id="tt_content.headline.wizard.description">
+            <target>Headline Element for display maintainable headline</target>
+        </trans-unit>
+        <trans-unit id="tt_content.inlineElements.wizard.title">
+            <target>Inline Elements</target>
+        </trans-unit>
+        <trans-unit id="tt_content.inlineElements.wizard.description">
+            <target>Element mit der Möglichkeit Rasterelemente in 2, 3 und 4 Spalten anzuzeigen.</target>
+        </trans-unit>
+        <trans-unit id="tt_content.slider.wizard.title">
+            <target>Slider Element</target>
+        </trans-unit>
+        <trans-unit id="tt_content.slider.wizard.description">
+            <target>Element für Slider Inhalt</target>
+        </trans-unit>
+        <trans-unit id="tt_content.accordion.wizard.title">
+            <target>Akkordeon Element</target>
+        </trans-unit>
+        <trans-unit id="tt_content.accordion.wizard.description">
+            <target>Element für Akkordeon Darstellung</target>
+        </trans-unit>
+        <trans-unit id="inline_item">
+            <target>Item</target>
+        </trans-unit>
+        <trans-unit id="tt_content.image_frontend_layout">
+            <target>Frontend Darstellung</target>
+        </trans-unit>
+        <trans-unit id="tt_content.button_style">
+            <target>Primärer oder Sekundärer Button</target>
+        </trans-unit>
+        <trans-unit id="tt_content.change_space_bottom">
+            <target>Abstand nach unten ändern</target>
+        </trans-unit>
+        <trans-unit id="tt_content.change_space_top">
+            <target>Abstand nach oben ändern</target>
+        </trans-unit>
+        <trans-unit id="tt_content.col_size">
+            <target>Spaltenaufteilung</target>
+        </trans-unit>
+        </body>
+    </file>
+</xliff>
