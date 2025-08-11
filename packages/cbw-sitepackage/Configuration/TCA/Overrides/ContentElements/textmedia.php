@@ -27,7 +27,7 @@ $tt_content_textmedia_settings = [
 
 $GLOBALS['TCA']['tt_content']['types']['textmedia']['showitem'] = str_replace(
     '--palette--;;headers,',
-    '--palette--;;headers,--palette--;;space-palette,bodytext,',
+    '--palette--;;headers,--palette--;;space-palette,',
     $GLOBALS['TCA']['tt_content']['types']['textmedia']['showitem']
 );
 

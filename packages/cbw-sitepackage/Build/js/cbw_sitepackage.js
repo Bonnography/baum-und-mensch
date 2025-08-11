@@ -208,25 +208,3 @@ document.addEventListener("DOMContentLoaded", function(event) {
         });
     }
 });
-
-
-function myCallBack() {
-    let recaptcha1;
-    let recaptcha2;
-    let recaptchaBox1 = document.getElementById('recaptcha-1');
-    let recaptchaBox2 = document.getElementById('recaptcha-2');
-
-    if (typeof (recaptchaBox1) != 'undefined' && recaptchaBox1 != null)
-    {
-        recaptcha1 = grecaptcha.render(document.getElementById('recaptcha-1'), {
-            'sitekey' : '6Lf9U-smAAAAAJiSuBFiQLxsyo6KKW0FnJFsP-XG'
-        });
-    }
-
-    if (typeof (recaptchaBox2) != 'undefined' && recaptchaBox2 != null)
-    {
-        recaptcha2 = grecaptcha.render(document.getElementById('recaptcha-2'), {
-            'sitekey' : '6LfjiWIpAAAAAHDVISXWEodsfLxN6WJmUhm9KFQF'
-        });
-    }
-}

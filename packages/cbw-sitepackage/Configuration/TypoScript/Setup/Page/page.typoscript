@@ -15,7 +15,7 @@ page {
     includeJSFooter {
         default = EXT:cbw_sitepackage/Resources/Public/js/default-libs.min.js
         cbwsitepackage = EXT:cbw_sitepackage/Resources/Public/js/cbw_sitepackage.min.js
-        recaptcha = https://www.google.com/recaptcha/api.js?onload=myCallBack&render=explicit&hl=de
+        recaptcha = https://www.google.com/recaptcha/api.js
         recaptcha.external = 1
         recaptcha.defer = 1
         recaptcha.async = 1
