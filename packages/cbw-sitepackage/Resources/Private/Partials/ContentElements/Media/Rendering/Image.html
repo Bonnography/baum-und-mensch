@@ -6,10 +6,16 @@
                 <picture>
                     <source
                             media="(max-width: 375px)"
+                            srcset="{f:uri.image(image: file, maxWidth: 375, treatIdAsReference:1, fileExtension: 'webp')}" type="image/webp" loading="lazy"/>
+                    <source
+                            media="(max-width: 375px)"
                             srcset="{f:uri.image(image: file, maxWidth: 375, treatIdAsReference:1, fileExtension: 'png')}" type="image/png" loading="lazy"/>
                     <source
                             media="(max-width: 375px)"
                             srcset="{f:uri.image(image: file, maxWidth: 375, treatIdAsReference:1, fileExtension: 'jpg')}" type="image/jpeg" loading="lazy" />
+                    <source
+                            media="(max-width: 768px)"
+                            srcset="{f:uri.image(image: file, maxWidth: 768, treatIdAsReference:1, fileExtension: 'webp')}" type="image/webp" loading="lazy"/>
                     <source
                             media="(max-width: 768px)"
                             srcset="{f:uri.image(image: file, maxWidth: 768, treatIdAsReference:1, fileExtension: 'png')}" type="image/png" loading="lazy"/>
@@ -18,10 +24,22 @@
                             srcset="{f:uri.image(image: file, maxWidth: 768, treatIdAsReference:1, fileExtension: 'jpg')}" type="image/jpeg" loading="lazy" />
                     <source
                             media="(max-width: 1920px)"
+                            srcset="{f:uri.image(image: file, maxWidth: 1920,  treatIdAsReference:1, fileExtension: 'webp')}" type="image/webp" loading="lazy" />
+                    <source
+                            media="(max-width: 1920px)"
                             srcset="{f:uri.image(image: file, maxWidth: 1920,  treatIdAsReference:1, fileExtension: 'png')}" type="image/png" loading="lazy" />
                     <source
                             media="(max-width: 1920px)"
                             srcset="{f:uri.image(image: file, maxWidth: 1920, treatIdAsReference:1, fileExtension: 'jpg')}" type="image/jpeg" loading="lazy" />
+                    <source
+                            media="(min-width: 1921px)"
+                            srcset="{f:uri.image(image: file,  treatIdAsReference:1, fileExtension: 'webp')}" type="image/webp" loading="lazy" />
+                    <source
+                            media="(min-width: 1921px)"
+                            srcset="{f:uri.image(image: file,  treatIdAsReference:1, fileExtension: 'png')}" type="image/png" loading="lazy" />
+                    <source
+                            media="(min-width: 1921px)"
+                            srcset="{f:uri.image(image: file, treatIdAsReference:1, fileExtension: 'jpg')}" type="image/jpeg" loading="lazy" />
                     <f:image image="{file}" class="img-fluid" loading="lazy" alt="{file.alternative}" title="{file.title}" />
                 </picture>
             </f:then>
@@ -29,10 +47,16 @@
                 <picture>
                     <source
                             media="(max-width: 375px)"
+                            srcset="{f:uri.image(image: file, maxWidth: 375, treatIdAsReference:1, fileExtension: 'webp')}" type="image/webp" loading="lazy" />
+                    <source
+                            media="(max-width: 375px)"
                             srcset="{f:uri.image(image: file, maxWidth: 375, treatIdAsReference:1, fileExtension: 'png')}" type="image/png" loading="lazy" />
                     <source
                             media="(max-width: 375px)"
                             srcset="{f:uri.image(image: file, maxWidth: 375, treatIdAsReference:1, fileExtension: 'jpg')}" type="image/jpeg" loading="lazy" />
+                    <source
+                            media="(max-width: 768px)"
+                            srcset="{f:uri.image(image: file, maxWidth: 375, treatIdAsReference:1, fileExtension: 'webp')}" type="image/webp" loading="lazy" />
                     <source
                             media="(max-width: 768px)"
                             srcset="{f:uri.image(image: file, maxWidth: 375, treatIdAsReference:1, fileExtension: 'png')}" type="image/png" loading="lazy" />
@@ -42,10 +66,23 @@
 
                     <source
                             media="(max-width: 1920px)"
+                            srcset="{f:uri.image(image: file, maxWidth: 660,  treatIdAsReference:1, fileExtension: 'webp')}" type="image/webp" loading="lazy" />
+                    <source
+                            media="(max-width: 1920px)"
                             srcset="{f:uri.image(image: file, maxWidth: 660,  treatIdAsReference:1, fileExtension: 'png')}" type="image/png" loading="lazy" />
                     <source
                             media="(max-width: 1920px)"
                             srcset="{f:uri.image(image: file, maxWidth: 660, treatIdAsReference:1, fileExtension: 'jpg')}" type="image/jpeg" loading="lazy" />
+
+                    <source
+                            media="(min-width: 1921px)"
+                            srcset="{f:uri.image(image: file,  treatIdAsReference:1, fileExtension: 'webp')}" type="image/webp" loading="lazy" />
+                    <source
+                            media="(min-width: 1921px)"
+                            srcset="{f:uri.image(image: file,  treatIdAsReference:1, fileExtension: 'png')}" type="image/png" loading="lazy" />
+                    <source
+                            media="(min-width: 1921px)"
+                            srcset="{f:uri.image(image: file, treatIdAsReference:1, fileExtension: 'jpg')}" type="image/jpeg" loading="lazy" />
                     <f:image image="{file}" class="img-fluid" loading="lazy" alt="{file.alternative}" title="{file.title}" />
                 </picture>
             </f:else>
