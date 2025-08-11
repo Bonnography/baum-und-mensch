@@ -112,6 +112,7 @@ return [
         'processor_effects' => true,
         'processor_enabled' => true,
         'processor_path' => '/usr/bin/',
+        'webp_quality' => 95,
     ],
     'LOG' => [
         'TYPO3' => [

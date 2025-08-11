@@ -47,10 +47,10 @@ lib.header-Data {
         file = EXT:cbw_sitepackage/Resources/Private/Templates/Page/HeadIcons.html
     }
 }
-[applicationContext == 'Development/Ddev' || 'Development/Testing' || 'Development/Staging']
+[applicationContext matches '#^Development#']
     page {
         meta {
-            robots   = noindex,nofollow
+            robots = noindex,nofollow
         }
     }
 [end]

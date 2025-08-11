@@ -8,17 +8,37 @@
                     <picture>
                         <source
                                 media="(max-width: 768px)"
-                                srcset="{f:uri.image(image: image, maxWidth: 1000)}"
+                                srcset="{f:uri.image(image: image, maxWidth: 1000, fileExtension: 'webp')}"
+                        />
+                        <source
+                                media="(max-width: 768px)"
+                                srcset="{f:uri.image(image: image, maxWidth: 1000, fileExtension: 'jpeg')}"
                         />
                         <source
                                 media="(max-width: 1200px)"
-                                srcset="{f:uri.image(image: image, maxWidth: 1200)}"
+                                srcset="{f:uri.image(image: image, maxWidth: 1200, fileExtension: 'webp')}"
+                        />
+                        <source
+                                media="(max-width: 1200px)"
+                                srcset="{f:uri.image(image: image, maxWidth: 1200, fileExtension: 'jpeg')}"
                         />
                         <source
                                 media="(max-width: 1920px)"
-                                srcset="{f:uri.image(image: image, maxWidth: 1920)}"
+                                srcset="{f:uri.image(image: image, maxWidth: 1920, fileExtension: 'webp')}"
                         />
-                        <f:image image="{image}" class="img-fluid" loading="lazy" alt="{image.alternative}" title="{image.title}" />
+                        <source
+                                media="(max-width: 1920px)"
+                                srcset="{f:uri.image(image: image, maxWidth: 1920, fileExtension: 'jpeg')}"
+                        />
+                        <source
+                                media="(min-width: 1921px)"
+                                srcset="{f:uri.image(image: image, fileExtension: 'webp')}"
+                        />
+                        <source
+                                media="(min-width: 1921px)"
+                                srcset="{f:uri.image(image: image, fileExtension: 'jpeg')}"
+                        />
+                        <f:image image="{image}" class="img-fluid" alt="{image.alternative}" title="{image.title}" />
                     </picture>
                 </f:for>
             </f:then>

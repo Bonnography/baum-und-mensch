@@ -17898,7 +17898,7 @@ iframe.wait-autoplay
    position: relative;
    height: 50px;
    transition: all 0.4s;
-   width: 100%;
+   width: auto;
    left: 0;
 }
 
