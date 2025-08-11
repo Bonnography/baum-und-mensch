@@ -46,7 +46,7 @@ config {
     doctype = html5
 
     ## avoid double page titles
-    noPageTitle = 2
+    #noPageTitle = 2
 
     ## cache config
     sendCacheHeaders = 0

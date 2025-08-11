@@ -16745,6 +16745,7 @@ p:last-child
    object-fit: cover;
    -o-object-position: center;
    object-position: center;
+   height: 250px;
 }
 
 .image-gallery-items-2, .image-gallery-items-3

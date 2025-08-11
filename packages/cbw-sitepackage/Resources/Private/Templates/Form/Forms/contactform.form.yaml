@@ -12,9 +12,8 @@ finishers:
       subject: 'Nachricht vom Baum und Mensch Kontaktformular'
       recipients:
         kontakt@baum-und-mensch.de: 'Baum und Mensch'
-        benjamin.bomberg@codebomb-websolutions.de: 'Baum und Mensch'
         heiko.paulick@gmail.com: 'Baum und Mensch'
-      senderAddress: 'info@codebomb-websolutions.de'
+      senderAddress: 'info@baum-und-mensch.de'
       senderName: 'Baum und Mensch'
       replyTo: '{email-contact-form}'
       addHtmlPart: true
@@ -31,7 +30,7 @@ finishers:
       subject: 'Deine Anfrage an Baum und Mensch'
       recipients:
         '{email-contact-form}': '{firstname} {lastname-contact-form}'
-      senderAddress: info@codebomb-websolutions.de
+      senderAddress: info@baum-und-mensch.de
       senderName: 'Baum und Mensch'
       addHtmlPart: true
       attachUploads: true
